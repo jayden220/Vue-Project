@@ -1,18 +1,43 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav-bar-comp/>
+    <home-comp/>
+    <about-comp/>
+    <edu-comp/>
+    <skills-comp/>
+    <projects-comp/>
+    <test-comp/>
+    <contact-comp/>
+    <footer-comp/>
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import NavBarComp from '@/components/NavBarComp.vue'
+import HomeComp from '@/components/HomeComp.vue'
+import AboutComp from '@/components/AboutComp.vue';
+import EduComp from '@/components/EduComp.vue';
+import SkillsComp from '@/components/SkillsComp.vue';
+import ProjectsComp from '@/components/ProjectsComp.vue';
+import TestComp from '@/components/TestComp.vue';
+import ContactComp from '@/components/ContactComp.vue';
+import FooterComp from '@/components/FooterComp.vue';
+
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    NavBarComp,
+    HomeComp,
+    AboutComp,
+    EduComp,
+    SkillsComp,
+    ProjectsComp,
+    TestComp,
+    ContactComp,
+    FooterComp
   }
 }
 </script>
