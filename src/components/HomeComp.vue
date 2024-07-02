@@ -8,6 +8,7 @@
         </div>
     </div>
                                             <hr>
+                                            
 </template>
 <script>
 export default {

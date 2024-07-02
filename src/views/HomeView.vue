@@ -1,5 +1,9 @@
 <template>
   <div class="home">
+    <div
+    class="container">
+    <spline-viewer-comp/>
+  </div>
     <nav-bar-comp/>
     <home-comp/>
     <about-comp/>
@@ -15,6 +19,7 @@
 
 <script>
 // @ is an alias to /src
+import SplineViewerComp from '@/components/SplineViewerComp.vue';
 import NavBarComp from '@/components/NavBarComp.vue'
 import HomeComp from '@/components/HomeComp.vue'
 import AboutComp from '@/components/AboutComp.vue';
@@ -24,6 +29,7 @@ import ProjectsComp from '@/components/ProjectsComp.vue';
 import TestComp from '@/components/TestComp.vue';
 import ContactComp from '@/components/ContactComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
+
 
 
 export default {
@@ -37,7 +43,8 @@ export default {
     ProjectsComp,
     TestComp,
     ContactComp,
-    FooterComp
+    FooterComp,
+    SplineViewerComp
   }
 }
 </script>
