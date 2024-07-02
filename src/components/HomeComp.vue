@@ -1,11 +1,13 @@
 <template lang="">
     <div id="home">
-        <h1>Home comp</h1>
-        <div class="name-contain">
-         <h1 class="name">Hi I'm <span class="auto-type">Jayden Van Rooyen.</span></h1>
+        <div class= "contain">
+                <img class= "photo" src="https://jayden220.github.io/hostedImages/images/20240422_115543.jpg">
+            <div class="name-contain">
+                <h1 class="name">Hi I'm <span class="auto-type">Jayden Van Rooyen.</span></h1>
+            </div>
         </div>
     </div>
-    <hr>
+                                            <hr>
 </template>
 <script>
 export default {
@@ -16,42 +18,82 @@ export default {
 #home{
     scroll-behavior: smooth;
     min-height: 100vh;
-    background: rgba(255, 0, 0, 0.668);
+    filter: drop-shadow(70%);
+    background-size:contain;
+    background-repeat: no-repeat;
+    /* background-image: url(https://jayden220.github.io/hostedImages/images/chess-10327_256.gif); */
 }
-
-.name-contain{
-    animation: typing 5s, cursor .5s step-end infinite;
-    border: 2px solid red;
+.contain{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 3em 3em;
+}
+.photo{
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+}
+.auto-type{
+    animation: typing 10s, cursor .5s step-end infinite;
+    border-bottom: 4px dotted black;
 }
 .name{
-    color: chartreuse;
-    margin: 2em;
+    color: rgb(0, 0, 0);
     text-align: left;
-    border: 2px solid red;
-
+    margin: 5em 0;
 }
+
 @keyframes typing{
-    from {width: 0 }
+    from {width: 50%}
 }
 @keyframes cursor{
-    50% {
+    70% {
         border-color: transparent;
     }
 }
 
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 600px)
 {
 #home{
-background: green
+background: rgb(1, 15, 1);
+background-image: url();
+background-repeat: no-repeat;
+filter: blur(60%);
+
+
+
 
 }
 h1{
     font-size: 1.5em;
     font-weight: 800;
 }
+.contain{
+    display: inline;
+}
+.name-contain{
+    order: 1;
+}
 .name{
-    position: initial;
-    margin: 0 2.8em;
+    /* position: initial; */
+    /* margin: 0em auto; */
+    width: 200px;
+    text-wrap: pretty;
+    margin: 0 auto;
+    order: 1;
+    /* order: 1; */
+
+}
+.photo{
+    width: 200px;
+    height: 250px;
+    border-radius: 25%;
+    margin: 3em 0em;
+    filter: grayscale(2%);
+    /* margin-right: -60em; */
+    /* order: 1; */
+    margin-left: -3em   ; 
 }
 }
 

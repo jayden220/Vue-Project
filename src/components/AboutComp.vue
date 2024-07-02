@@ -1,10 +1,19 @@
-<template lang="">
+<template>
     <div id= "about">
-        <h1>About Comp</h1>
-        {{$store.state.aboutMe}}
+        <h1>a</h1>
+        
+        <card-comp :aboutMe ='aboutData()'>
+            <template #about>
+                <div class="about-container">
+                    {{aboutData()}}
+                </div>
+            </template>
+        </card-comp>
     </div>
+    <hr>
 </template>
 <script>
+import CardComp from './CardComp.vue';
 export default {
     methods:{
         aboutData(){
@@ -12,12 +21,15 @@ export default {
         }
     },
     computed:{
-        getAboutMe(){
-            return this.$store.dispatch('getAboutMe')
+        getData(){
+            return this.$store.dispatch('getData')
         }
     },
     mounted(){
-        this.getAboutMe
+        this.getData
+    },
+    components:{
+        CardComp
     }
 }
 </script>
@@ -26,10 +38,17 @@ export default {
     scroll-behavior: smooth;
     min-height: 100vh;
 }
-/* @media only screen and (max-width: 700px)
+.about-container{
+    margin: 5cqi 10cqi;
+
+}
+@media only screen and (max-width: 700px)
 {
 #about{
 min-height: 60vh;
-}} */
+}
+
+
+} 
     
 </style>

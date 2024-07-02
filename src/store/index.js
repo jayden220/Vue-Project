@@ -4,11 +4,13 @@ export default createStore({
   state: {
     aboutMe: null,
     education: null,
-    skills: null,
+    softskills: null,
+    techskills: null,
     projects: null,
     testimonials: null
   },
-  getters: {
+ 
+  mutations: {
     setAboutMe(state,payload){
       state.aboutMe = payload
     },
@@ -28,20 +30,23 @@ export default createStore({
       state.testimonials = payload
     }
   },
-  mutations: {
-  },
   actions: {
-    async getAboutMe({commit}){
-      let info = await fetch('https://jayden220.github.io/projectInfo/info.json')
-      let data = await info.json()
-      let aboutMe,projects,education,techskills,softskills,testimonials = data
-      commit('setAboutMe',aboutMe)
-      commit('setProjects',projects)
-      commit('setEducation',education)
-      commit('setTechSkills',techskills)
-      commit('setSoftSkills',softskills)
-      commit('setTestimonials',testimonials)
-      console.log(data);
+    async getData({commit}){
+        try {
+        let info = await fetch('https://jayden220.github.io/projectInfo/info.json')
+        let data = await info.json()
+        let {aboutMe,projects,education,techskills,softskills,testimonials} = data
+        commit('setAboutMe',aboutMe)
+        commit('setProjects',projects)
+        commit('setEducation',education)
+        commit('setTechSkills',techskills)
+        commit('setSoftSkills',softskills)
+        commit('setTestimonials',testimonials)
+        console.log(aboutMe);
+      
+    } catch (error) {
+      console.log('error')
+    }
       
     }
   },

@@ -24,7 +24,22 @@ export default {
 <style scoped>
     .brand{
     text-decoration: none;
-    color: #6ab942;
+    color: #bbdbb7;
     }
-    
+
+
+   a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+   } 
+   @media only screen and (max-width: 684px){
+    .brand{
+        margin: 0 auto;
+    }
+    /* a{
+        display: inline-flex;
+    } */
+   }
 </style>
