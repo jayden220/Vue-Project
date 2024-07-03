@@ -6,6 +6,9 @@
                 <div v-for="project in projectsData()" :key="project">
                     <div class="project-container" data-aos="zoom-in-right">
                         <h2>{{project.name}}</h2>
+                        <img :src=project.image>
+                        <p>{{project.description}}</p>
+                        <a :href="project.vercel" target="_blank">View Project</a>
 
                     </div>
                 </div>
@@ -39,8 +42,14 @@ export default {
 <style scoped>
 
 #projects{
+    padding-top: 50px;
     min-height: 100vh;
     scroll-behavior: smooth;
+}
+
+img{
+    width: 20em;
+    height: 20em;
 }
 @media only screen and (max-width: 700px)
 {
@@ -56,6 +65,10 @@ min-height: 60vh;
     margin: 4cqi 3cqi;
     border: 2px red solid;
     gap: 2em;
+}
+img{
+    width: 100%;
+    height: fit-content;
 }
 }
     

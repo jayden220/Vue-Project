@@ -42,7 +42,6 @@ export default createStore({
         commit('setTechSkills',techskills)
         commit('setSoftSkills',softskills)
         commit('setTestimonials',testimonials)
-        console.log(aboutMe);
       
     } catch (error) {
       console.log('error')

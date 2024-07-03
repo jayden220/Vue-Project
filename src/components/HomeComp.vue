@@ -1,7 +1,7 @@
 <template lang="">
     <div id="home">
         <div class= "contain">
-                <img class= "photo" src="https://jayden220.github.io/hostedImages/images/20240422_115543.jpg">
+                <img class= "photo" src="https://jayden220.github.io/hostedImages/images/20240422_115543.jpg">  
             <div class="name-contain">
                 <h1 class="name">Hi I'm <span class="auto-type">Jayden Van Rooyen.</span></h1>
             </div>
@@ -20,15 +20,17 @@ export default {
     scroll-behavior: smooth;
     min-height: 100vh;
     filter: drop-shadow(70%);
-    background-size:contain;
+    background-size:80em;
     background-repeat: no-repeat;
+    /* background-image: url('https://jayden220.github.io/hostedImages/images/20240422_115543.jpg'); */
+    filter: grayscale(30%);
     /* background-image: url(https://jayden220.github.io/hostedImages/images/chess-10327_256.gif); */
 }
 .contain{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 3em 3em;
+    /* margin: 3em 3em; */
 }
 .photo{
     width: 400px;
