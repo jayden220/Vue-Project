@@ -1,11 +1,13 @@
 <template lang="">
     <div id="home">
         <div class= "contain">
-                <img class= "photo" src="https://jayden220.github.io/hostedImages/images/20240422_115543.jpg">  
-            <div class="name-contain">
-                <h1 class="name">Hi I'm <span class="auto-type">Jayden Van Rooyen.</span></h1>
+            
+            <!-- <spline-viewer url="https://prod.spline.design/lzPWUC6U7rd10gRA/scene.splinecode"></spline-viewer> -->
+           
+            <spline-viewer url="https://prod.spline.design/6eUur-ls2D1qMl5B/scene.splinecode"></spline-viewer>
+                <!-- <img class= "photo" src="https://jayden220.github.io/hostedImages/images/20240422_115543.jpg">   -->
             </div>
-        </div>
+            
     </div>
                                             <hr>
                                             
@@ -16,6 +18,7 @@ export default {
 }
 </script>
 <style scoped>
+
 #home{
     scroll-behavior: smooth;
     min-height: 100vh;
@@ -25,6 +28,9 @@ export default {
     /* background-image: url('https://jayden220.github.io/hostedImages/images/20240422_115543.jpg'); */
     filter: grayscale(30%);
     /* background-image: url(https://jayden220.github.io/hostedImages/images/chess-10327_256.gif); */
+}
+spline-viewer{
+    width: 100%;
 }
 .contain{
     display: flex;
@@ -37,49 +43,13 @@ export default {
     height: 500px;
     border-radius: 25px;
 }
-.auto-type{
-    overflow: hidden;
-  border-right: .15em solid rgb(149, 71, 151);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-    
-}
-.name{ overflow: hidden;
-  white-space: nowrap;
-  /* margin: 0 auto; */
-  letter-spacing: .15em;
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-    
-}
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color:   rgb(175, 75, 186); }
-}
 
 
 
 @media only screen and (max-width: 600px)
 {
-#home{
-background: rgb(1, 15, 1);
-background-image: url();
-background-repeat: no-repeat;
-filter: blur(60%);
 
-
-
-}
 h1{
     font-size: 1.5em;
     font-weight: 800;
@@ -97,6 +67,8 @@ h1{
     text-wrap: pretty;
     margin: 0 auto;
     order: 1;
+    font-family:"Wittgenstein" ;
+
     /* order: 1; */
 
 }

@@ -32,17 +32,20 @@ export default {
     padding-top: 50px;
     scroll-behavior: smooth;
     min-height: 90vh;
+    background: radial-gradient(circle at 81.9% 53.5%, rgb(173, 53, 53) 16.3%, rgb(240, 60, 60) 100.2%);
+    color: aliceblue;
 }
 .contact-container{
 
     display: flex;
     justify-content: center;
     justify-content: space-between;
+    margin: 0 15em;
 }
 .contact-info {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 10em;
+    /* margin: 0 10em; */
     border: 2px solid;
     width: 15em;
     padding: 0 auto;
@@ -62,10 +65,13 @@ textarea{
 {
 #contact{
 min-height: 60vh;
+background: radial-gradient(circle at 81.9% 53.5%, rgb(173, 53, 53) 16.3%, rgb(240, 60, 60) 100.2%);
+color: aliceblue;
 }
 .contact-container{
     display: grid;
     justify-content: center;
+    margin: 0 auto;
 }
 .contact-info {
     display: flex;
@@ -82,7 +88,7 @@ min-height: 60vh;
     margin: 0 auto;
 }
 form{
-    margin: 0 auto;
+    margin: 10em 0;
     border: 2px solid;
 }
 form input{

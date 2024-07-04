@@ -68,9 +68,11 @@ export default {
 </script>
 <style scoped>
     #skills{
+        background: radial-gradient(circle at 81.9% 53.5%, rgb(173, 53, 53) 16.3%, rgb(240, 60, 60) 100.2%);
         padding-top: 50px;
         min-height: 100vh;
         scroll-behavior: smooth;
+        color: aliceblue;
     }
     .logo-img{
         width: 400px;

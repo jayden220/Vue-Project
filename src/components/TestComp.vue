@@ -44,6 +44,8 @@ export default {
     padding-top: 50px;
     scroll-behavior: smooth;
     min-height: 90cqi;
+    background: radial-gradient(circle at 81.9% 53.5%, rgb(173, 53, 53) 16.3%, rgb(240, 60, 60) 100.2%);
+    color: aliceblue;
 }
 .test-container{
     
