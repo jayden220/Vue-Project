@@ -11,7 +11,7 @@
                 </div>
             </div>
         <div class="form-container">
-            <form action="https://formspree.io/mvzjyvzr">
+            <form action="https://formspree.io/f/mdoqynke" method="POST">
                 <input type="text" name="name" placeholder="Name" required>
                 <br>
                 <input type="email" name="email" placeholder="Email" required>
@@ -33,6 +33,12 @@ export default {
     scroll-behavior: smooth;
     min-height: 90vh;
 }
+.contact-container{
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
 .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -44,11 +50,22 @@ export default {
 .form-container{
     display: flex;
     flex-wrap: wrap;
+    /* margin: 0 170px; */
+}
+input{
+    margin: 2em 0;
+}
+textarea{
+    width: 201px
 }
 @media only screen and (max-width: 700px)
 {
 #contact{
 min-height: 60vh;
+}
+.contact-container{
+    display: grid;
+    justify-content: center;
 }
 .contact-info {
     display: flex;

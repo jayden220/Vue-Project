@@ -4,20 +4,30 @@
         <card-comp>
         <template #education>
                 <div v-for="edu in educationData()" :key="edu">
-                    <br><br>
-                    {{edu.placeOfInstitution}}
-                    <br><br>
-                    {{ edu.year }}
-                    <br><br>
-                    {{ edu.description }}
+                   <p>
+                    {{ edu.placeOfInstitution[0] }}
+                   </p> 
+                   <p>
+                       {{ edu.year[0] }}                   
+                   </p> 
+                
+                    <div v-for="itemArray in edu" :key="itemArray">
+                        <p>{{ itemArray.placeOfInstitution }}</p>
+                        <p v-for="item in itemArray" :key="item">
+                            
+                            {{ item.name }}
+                            {{ item.qualimg }}
+                        </p>
+                        
+                    </div>
 
                     <br>
-                    <!-- {{edu.extra}} -->
-                    <!-- {{edu.qualifications[0].qual}} -->
+                    <p ></p>
+                    <!-- {{edu.qualifications}} -->
                 </div>
-                <div v-for="qual in quals.qual" :key="qual">
+                <!-- <div v-for="qual in quals.qual" :key="qual">
                     {{ qual.qual }}
-                </div>
+                </div> -->
             </template>
        </card-comp>
     </div>

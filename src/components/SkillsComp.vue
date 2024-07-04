@@ -97,7 +97,7 @@ export default {
     .icons{
         width: 150px;
         height: 150px;
-        animation: 2s bounce infinite ease;
+        animation: 1s bounce infinite ease;
     }
     @keyframes bounce {
         100%{

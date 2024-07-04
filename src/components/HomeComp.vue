@@ -38,23 +38,36 @@ export default {
     border-radius: 25px;
 }
 .auto-type{
-    animation: typing 10s, cursor .5s step-end infinite;
-    border-bottom: 4px dotted black;
+    overflow: hidden;
+  border-right: .15em solid rgb(149, 71, 151);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    
 }
-.name{
-    color: rgb(0, 0, 0);
-    text-align: left;
-    margin: 5em 0;
+.name{ overflow: hidden;
+  white-space: nowrap;
+  /* margin: 0 auto; */
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    
 }
 
-@keyframes typing{
-    from {width: 50%}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
-@keyframes cursor{
-    70% {
-        border-color: transparent;
-    }
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:   rgb(175, 75, 186); }
 }
+
+
 
 @media only screen and (max-width: 600px)
 {
@@ -63,7 +76,6 @@ background: rgb(1, 15, 1);
 background-image: url();
 background-repeat: no-repeat;
 filter: blur(60%);
-
 
 
 

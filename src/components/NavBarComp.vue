@@ -33,6 +33,7 @@ export default {
     text-decoration: none;
     font-weight: 400;
     text-transform: uppercase;
+    padding: 2em 0;
    } 
    @media only screen and (max-width: 684px){
     .brand{
