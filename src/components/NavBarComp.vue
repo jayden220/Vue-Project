@@ -2,7 +2,7 @@
     <div class="sticky-top">
         <nav class="navbar  bg-dark">
     <div class="container-fluid">
-      <a class="brand">logo</a>
+      <a class="brand">JAYDEN</a>
        <nav> 
         <a href="#">Home</a> |
         <a href="#about">About</a> |
@@ -22,6 +22,9 @@ export default {
 }
 </script>
 <style scoped>
+.bg-dark{
+  color: aqua;
+}
     .brand{
     text-decoration: none;
     color: #bbdbb7;
@@ -33,7 +36,7 @@ export default {
     text-decoration: none;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 2em 0;
+    padding: .5em 0;
    } 
 /*hover*/
  a::before,
@@ -42,7 +45,8 @@ export default {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #e40a0a;
+  /* background-color: #e40a0a; */
+  background: radial-gradient(circle at 81.9% 53.5%, rgb(173, 53, 53) 16.3%, rgb(240, 60, 60) 100.2%);
   transition: all .5s ease;
   opacity: 0;
   transform: scaleX(0);
@@ -64,7 +68,9 @@ export default {
   transform: scaleX(1);
 }
  a:hover {
-  color: #dc1010;
+  color: rgb(240, 60, 60);
+ 
+
 } 
 
    @media only screen and (max-width: 684px){

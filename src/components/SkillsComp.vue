@@ -6,8 +6,7 @@
         <template #techskills>
             <h4>Technical Skills</h4>
                 <div v-for="tech in techData()" :key="tech">
-                    
-                    {{tech.name}}
+                    <h5>{{tech.name}}</h5>
                     <div class="logos">
                         <div class="logoslide">
                             <img :src=tech.image class="logo-img">
@@ -16,15 +15,20 @@
                 </div>
             </template>
        </card-comp>
+       <br><br><br><br><br>
+
        <card-comp>
-        <br><br>
         <template #softskills>
             <h4>Soft Skills</h4>
+            <br><br>
             <div class="soft-container">
 
                 <div v-for="soft in softData()" :key="soft">
-                    {{soft.name}}
-                    <br>
+                    
+                    <h5>
+                        {{soft.name}}
+                    </h5>
+                    <br><br>
                     {{soft.description}}
                     <br><br>
                     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
@@ -37,7 +41,7 @@
             </template>
        </card-comp>
     </div>
-    <hr>
+    
 </template>
 <script>
 import CardComp from './CardComp.vue';
@@ -67,12 +71,15 @@ export default {
 
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
     #skills{
         background: radial-gradient(circle at 81.9% 53.5%, rgb(173, 53, 53) 16.3%, rgb(240, 60, 60) 100.2%);
         padding-top: 50px;
         min-height: 100vh;
         scroll-behavior: smooth;
         color: aliceblue;
+        font-family: "Wittgenstein";
     }
     .logo-img{
         width: 400px;
@@ -83,7 +90,7 @@ export default {
         flex-direction: row;
         overflow: hidden;
         padding: 20px 0;
-        filter: grayscale(50%);
+        /* filter: grayscale(50%); */
         
         /* background: rebeccapurple; */
     }

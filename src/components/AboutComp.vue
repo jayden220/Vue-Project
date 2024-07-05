@@ -1,6 +1,6 @@
 <template>
     <div id= "about">
-        <h1>About Me</h1>
+        
         <br>
         <div data-aos="zoom-in-up">
             <div class="name-contain">
@@ -8,10 +8,11 @@
             </div>
             <br>
             <h3>I am a aspiring web developer</h3>
+            <br>
              <img class= "photo" src="https://jayden220.github.io/hostedImages/images/20240422_115543.jpg">  
         </div>
         <hr>
-        
+        <h1>About Me</h1>
         <card-comp :aboutMe ='aboutData()'>
             <template #about>
                 <div class="about-container">
@@ -20,7 +21,7 @@
             </template>
         </card-comp>
     </div>
-    <hr>
+    
 </template>
 <script>
 import CardComp from './CardComp.vue';
@@ -56,7 +57,7 @@ export default {
 }
 .auto-type{
     overflow: hidden;
-  border-right: .15em solid rgb(149, 71, 151);
+  border-right: .15em solid rgb(0, 0, 0);
   white-space: nowrap;
   margin: -12px auto;
   letter-spacing: .15em;
@@ -70,7 +71,7 @@ export default {
   /* margin: 0 auto; */
   letter-spacing: .15em;
   animation:
-    typing 3.5s steps(40, end),
+    typing 3.5s steps(100, start),
     blink-caret .75s step-end infinite;
     
 }
@@ -81,7 +82,7 @@ export default {
 }
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color:   rgb(175, 75, 186); }
+  50% { border-color:   rgba(0, 0, 0, 0.66); }
 }
 .photo{
     width: 400px;
@@ -89,9 +90,10 @@ export default {
     border-radius: 25px;
 }
 .about-container{
-    margin: 5cqi 10cqi;
+    margin: 0cqi 10cqi;
     font-family: "Wittgenstein";
     font-size: 1.8cqi;
+    padding: 4em 0;
 }
 h1{
     font-family: "Wittgenstein";

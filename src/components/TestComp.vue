@@ -6,7 +6,9 @@
                 <div v-for="test in testsData()" :key="test" class="test-container" data-aos="flip-left">
                     <div>
                         <h1>{{test.name}}</h1>
+                        <br>
                         <img :src=test.image>
+                        <br><br>
                         <p>{{test.message}}</p>
 
 
@@ -15,7 +17,7 @@
             </template>
        </card-comp>
     </div>
-    <hr>
+
 </template>
 <script>
 import CardComp from './CardComp.vue';
@@ -40,23 +42,26 @@ export default {
 }
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
     #test{
     padding-top: 50px;
     scroll-behavior: smooth;
     min-height: 90cqi;
     background: radial-gradient(circle at 81.9% 53.5%, rgb(173, 53, 53) 16.3%, rgb(240, 60, 60) 100.2%);
     color: aliceblue;
+    font-family: "Wittgenstein";
 }
 .test-container{
     
-    border: 2px red solid;
+    /* border: 2px red solid; */
     gap: 2em;
     margin: 5em auto;
     width: 50em;
 }
 img{
     width: 15cqi;
-    border-radius: 25px;
+    border-radius: 20px;
     /* margin: 1em; */
 }
 @media only screen and (max-width: 700px)
