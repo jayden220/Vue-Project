@@ -27,6 +27,8 @@ export default {
 }
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
 footer{
     height: 150px;
     background-color: #e60606;

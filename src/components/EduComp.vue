@@ -1,6 +1,8 @@
 <template>
   <div id="education">
-    <h1>Education comp</h1>
+    <br>
+    <h1>My Education</h1>
+    <br>
     <card-comp>
       <template #education>
         <div class="education">
@@ -11,9 +13,10 @@
             <div v-for="itemArray in edu" :key="itemArray">
               {{ itemArray.name }}
               <div v-for="item in itemArray" :key="item">
-                <p>{{ item.qual }}</p>
+                <h5>{{ item.qual }}</h5>
                 <!-- <p>{{ item.description] }}</p> -->
                 <img :src="item.qualimg" class="imgblock" />
+                <br>
               </div>
             </div>
           </div>
@@ -28,7 +31,7 @@
       </template>
     </card-comp>
   </div>
-  <hr />
+ 
 </template>
 <script>
 import CardComp from "./CardComp.vue";
@@ -63,16 +66,17 @@ export default {
 };
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
 #education {
     background: radial-gradient(circle at 81.9% 53.5%, rgb(173, 53, 53) 16.3%, rgb(240, 60, 60) 100.2%);
   padding-top: 50px;
   min-height: 100vh;
   scroll-behavior: smooth;
   color: aliceblue;
+  font-family: 'Wittgenstein';
 }
-.education {
-  border: 2px solid;
-}
+
 .imgblock {
   /* display: flex; */
   width: 200px;
