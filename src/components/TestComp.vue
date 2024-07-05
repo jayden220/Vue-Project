@@ -5,7 +5,7 @@
         <template #testimonials>
                 <div v-for="test in testsData()" :key="test" class="test-container" data-aos="flip-left">
                     <div>
-                        <h1>{{test.name}}</h1>
+                        <h3>{{test.name}}</h3>
                         <br>
                         <img :src=test.image>
                         <br><br>
@@ -45,18 +45,23 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
 
     #test{
-    padding-top: 50px;
+    padding-top: 80px;
     scroll-behavior: smooth;
-    min-height: 90cqi;
+    min-height: 100vh;
     background: radial-gradient(circle at 81.9% 53.5%, rgb(173, 53, 53) 16.3%, rgb(240, 60, 60) 100.2%);
     color: aliceblue;
     font-family: "Wittgenstein";
+    /* height: 3168px; */
+}
+hr{
+    background: radial-gradient(circle at 81.9% 53.5%, rgb(173, 53, 53) 16.3%, rgb(240, 60, 60) 100.2%);
+    margin: 0 0;
 }
 .test-container{
     
     /* border: 2px red solid; */
     gap: 2em;
-    margin: 5em auto;
+    margin: 0em auto;
     width: 50em;
 }
 img{
@@ -78,7 +83,7 @@ margin: 0 auto;
     /* padding: 2em; */
     height: min-content;
     /* margin: 2em 0; */
-    border: 2px red solid;
+    /* border: 2px red solid; */
     gap: 10em;
     margin-bottom: 5cqi;
     width: 70cqi;

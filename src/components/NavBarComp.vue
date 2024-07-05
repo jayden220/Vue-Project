@@ -2,7 +2,7 @@
     <div class="sticky-top">
         <nav class="navbar  bg-dark">
     <div class="container-fluid">
-      <a class="brand">JAYDEN</a>
+      <a class="brand">J V R</a>
        <nav> 
         <a href="#">Home</a> |
         <a href="#about">About</a> |
@@ -22,9 +22,27 @@ export default {
 }
 </script>
 <style scoped>
-.bg-dark{
-  color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+.brand{
+  animation: slide 20s infinite alternate;
+  font-size: 20px;
 }
+
+
+
+@keyframes slide {
+        100%{
+            transform: rotateX(3600deg);
+        }
+        50%{
+          transform: rotateY(360deg);
+        }
+        40%{
+        transform: rotateX(3600deg);
+      }
+    } 
+
     .brand{
     text-decoration: none;
     color: #bbdbb7;
@@ -37,6 +55,7 @@ export default {
     font-weight: 400;
     text-transform: uppercase;
     padding: .5em 0;
+    font-family: "Bitter";
    } 
 /*hover*/
  a::before,
@@ -76,6 +95,21 @@ export default {
    @media only screen and (max-width: 684px){
     .brand{
         margin: 0 auto;
+    }
+    .brand{
+        
+        animation: 1s bounce infinite both;
+    }
+    @keyframes bounce {
+        100%{
+            transform: translateY(0px);
+        }
+        75%{
+            transform: translateY(-2px);
+        }
+        50%{
+            transform: translateY(-1px);
+        }
     }
     /* a{
         display: inline-flex;
