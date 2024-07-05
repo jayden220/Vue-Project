@@ -75,7 +75,7 @@ export default {
 
     #skills{
         background: radial-gradient(circle at 81.9% 53.5%, rgb(173, 53, 53) 16.3%, rgb(240, 60, 60) 100.2%);
-        padding-top: 50px;
+        padding-top: 70px;
         min-height: 100vh;
         scroll-behavior: smooth;
         color: aliceblue;

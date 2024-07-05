@@ -92,7 +92,7 @@ export default {
 .about-container{
     margin: 0cqi 10cqi;
     font-family: "Wittgenstein";
-    font-size: 1.8cqi;
+    font-size: 1.2cqi;
     padding: 4em 0;
 }
 h1{
@@ -113,7 +113,7 @@ min-height: 60vh;
 }
 
 .about-container{
-    margin: 5cqi 10cqi;
+    margin: 0cqi 10cqi;
     font-family: "Wittgenstein";
     font-size: 3.5cqi;
 }
